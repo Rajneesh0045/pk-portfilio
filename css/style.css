@@ -196,3 +196,43 @@ html,body{
   width: 20px;
   height: 30px;
 }
+
+/***********Things PK do**************/
+
+.design{
+  position: absolute;
+  bottom: 200px;
+  width: 150px;
+  height: 150px;
+  background: url(../img/design1.png);
+  background-repeat: none;
+  background-size: contain;
+  color: white;
+}
+
+.app-dev{
+  position: absolute;
+  bottom: 100px;
+  right: -1px;
+  width: 150px;
+  height: 150px;
+  background: url(../img/android.png) white;
+  background-repeat: none;
+  background-size: contain;
+  color: white;
+}
+
+.design p,
+.app-dev p{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
