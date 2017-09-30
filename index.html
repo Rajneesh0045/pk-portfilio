@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Pk</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" media="none" onload="if(media!='all')media='all'" async>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="none" onload="if(media!='all')media='all'" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="name">Pk.</div>
+      <nav>
+        <ul>
+        <li>Home</li>
+        <li>Projects</li>
+        <li>Github</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+      <div class="heading">
+        <img src="img/WebDesign.jpg" alt="background image" id="cover-pic">
+        <div class="overlay"></div>
+      </div>
+      <div class="top-box"></div>
+      <img class="man" src="img/jumping-man.png" alt="jumping man">
+      <div class="down-box"></div>
+      <div class="small-layer">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="mid-layer">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <img src="img/black.png" alt="broken piece of frame" class="blured-box">
+    </div>
+    <div class="space"></div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+    $(window).scroll(function(){
+
+      var wScroll = $(this).scrollTop();
+      $('.man').css({
+        'transform' : 'translate('+ wScroll /64 +'%, '+ wScroll /64 +'%)'
+      })
+      $('.blured-box').css({
+        'transform' : 'translate(0px, -'+ wScroll*4 +'%) rotate(120deg)'
+      })
+      $('.small-layer').css({
+        'transform' : 'translate(0px, -'+ wScroll/128 +'%)'
+      })
+      $('.mid-layer').css({
+        'transform' : 'translate(0px, -'+ wScroll/16 +'%)'
+      })
+    });
+    </script>
+  </body>
+</html>

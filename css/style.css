@@ -1,0 +1,198 @@
+html,body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Nunito' , Monospace;
+}
+.container{
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  min-width: 90%;
+  overflow: hidden;
+  transform: translate(-50%,0);
+  height: 1000px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 100px 5px rgba(0,0,0,0.4);
+  margin-bottom: 30px;
+}
+.name{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  /*border:2px solid red;*/
+  z-index: 2;
+}
+
+.container nav{
+  z-index: 2;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  color: white;
+  margin: 10px;
+}
+.container nav ul{
+  list-style: none;
+  display: flex;
+  font-size: 20px;
+}
+.container nav ul li{
+  margin-left: 40px;
+  cursor: pointer;
+}
+.heading{
+  position: absolute;
+  top:-80px;
+  left: -20%;
+  min-width: 150%;
+  height: 500px;
+  /*transform: translate(-50%,-50%);*/
+  background: black;
+  color: white;
+  transform: rotate(-5deg);
+  overflow: hidden;
+}
+.heading img{
+  /*display: none;*/
+  width: 100%;
+  transform: rotate(5deg);
+}
+.overlay{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  z-index: 2;
+}
+.man{
+  position: absolute;
+  top:25%;
+  left: 30%;
+  width: 500px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.down-box,
+.top-box{
+  position: absolute;
+  top:20%;
+  left: 35%;
+  width: 300px;
+  height: 500px;
+}
+
+.top-box{
+  z-index: 11;
+  border-top: 40px solid #050510;
+  border-left: 40px solid #050510;
+}
+
+.down-box{
+  z-index: 9;
+  border-bottom: 40px solid #050510;
+  border-right: 40px solid #050510;
+  box-shadow: 0px 0px 80px 4px rgba(0,0,0,0.4);
+}
+.blured-box{
+  position: absolute;
+  top: 1500px;
+  left: 70%;
+  filter: blur(5px);
+  box-shadow: 50px -100px 40px -10px rgba(0,0,0,0.2);
+  transform: rotate(120deg);
+  z-index: 999;
+}
+
+/*********Lower parallax layer****************/
+.small-layer{
+  z-index: 5;
+  width: 80%;
+  height: 400px;
+  position: absolute;
+  /*border:1px solid red;*/
+  left: 10%;
+  top: 500px;
+}
+.small-layer li{
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  background: #050510;
+  margin-bottom: 2px;
+  box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.3);
+}
+
+.small-layer li:nth-child(1){
+  position: absolute;
+  top: 330px;
+  left:20%;
+  width: 70px;
+  height: 30px;
+}
+.small-layer li:nth-child(2){
+  position: absolute;
+  top: 300px;
+  left:70%;
+  width: 40px;
+  height:70px;
+}
+.small-layer li:nth-child(3){
+  position: absolute;
+  top: 100px;
+  left:80%;
+  width: 30px;
+  height: 50px;
+}
+.small-layer li:nth-child(4){
+  position: absolute;
+  top: 255px;
+  left:40%;
+  width: 60px;
+  height: 30px;
+}
+
+/**************middle layer parallax*****************/
+
+.mid-layer{
+  z-index: 6;
+  width: 80%;
+  height: 500px;
+  position: absolute;
+  left: 10%;
+  top: 500px;
+}
+.mid-layer li{
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  background: #050510;
+  margin-bottom: 2px;
+  box-shadow: 10px 20px 10px 1px rgba(0,0,0,0.3);
+}
+.mid-layer li:nth-child(1){
+  position: absolute;
+  top: 405px;
+  left:50%;
+  width: 20px;
+  height: 30px;
+}
+.mid-layer li:nth-child(2){
+  position: absolute;
+  top: 105px;
+  left: 20%;
+  width: 80px;
+  height: 30px;
+}
+.mid-layer li:nth-child(3){
+  position: absolute;
+  top: 205px;
+  left:90%;
+  width: 20px;
+  height: 30px;
+}
